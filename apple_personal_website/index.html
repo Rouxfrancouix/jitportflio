@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" data-accent="violet">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jit Paul | Public Relations & Corporate Communications Professional</title>
+  <meta name="description" content="Personal portfolio of Jit Paul - Strategic PR, Corporate Communications, Media Relations & Event Management Professional.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Ambient Background Glow Canvas -->
+  <div class="ambient-glow glow-1" id="glow-1"></div>
+  <div class="ambient-glow glow-2" id="glow-2"></div>
+  <div class="ambient-glow glow-3" id="glow-3"></div>
+  <div class="grid-overlay"></div>
+
+  <!-- Header Navigation -->
+  <header class="apple-nav">
+    <div class="nav-container">
+      <a href="#home" class="nav-brand">
+        <span class="brand-logo-icon"><i data-lucide="megaphone"></i></span>
+        <span class="brand-name" id="nav-brand-name">JIT PAUL</span>
+        <span class="brand-badge" id="nav-status-badge">PR & Communications</span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#home" class="nav-link active" data-view="home">
+          <i data-lucide="home"></i> Home
+        </a>
+        <a href="#bio" class="nav-link" data-view="bio">
+          <i data-lucide="user"></i> Biography
+        </a>
+        <a href="#news" class="nav-link" data-view="news">
+          <i data-lucide="newspaper"></i> Press & News
+        </a>
+        <a href="#projects" class="nav-link" data-view="projects">
+          <i data-lucide="briefcase"></i> Campaigns
+        </a>
+        <a href="#skills" class="nav-link" data-view="skills">
+          <i data-lucide="award"></i> Core Skills
+        </a>
+        <a href="#contact" class="nav-link" data-view="contact">
+          <i data-lucide="mail"></i> Contact
+        </a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Light / Dark Mode Switcher -->
+        <button class="theme-toggle-btn" id="theme-toggle-btn" title="Toggle Light / Dark Mode">
+          <i data-lucide="sun" class="sun-icon"></i>
+          <i data-lucide="moon" class="moon-icon"></i>
+        </button>
+
+        <!-- Accent Color Picker -->
+        <div class="color-picker-dropdown" title="Customize Accent Color">
+          <button class="color-btn" id="color-picker-trigger">
+            <span class="color-dot"></span>
+          </button>
+          <div class="color-menu" id="color-menu">
+            <span class="color-menu-title">Accent Theme</span>
+            <div class="color-options">
+              <button class="color-opt opt-violet active" data-color="violet" title="Neon Violet"></button>
+              <button class="color-opt opt-cyan" data-color="cyan" title="Cyber Cyan"></button>
+              <button class="color-opt opt-emerald" data-color="emerald" title="Emerald Glow"></button>
+              <button class="color-opt opt-amber" data-color="amber" title="Amber Flare"></button>
+              <button class="color-opt opt-rose" data-color="rose" title="Sunset Rose"></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT VIEWS -->
+  <main class="main-content">
+
+    <!-- 1. HOME VIEW -->
+    <section id="home-view" class="page-view active">
+      <div class="hero-section">
+        <div class="hero-backdrop-img">
+          <img src="assets/hero_abstract.jpg" alt="Abstract Artwork" id="hero-bg-image">
+        </div>
+        <div class="hero-content">
+          <div class="hero-pill-badge" id="hero-pill-badge">
+            <span class="pill-dot"></span>
+            <span id="hero-pill-text">PUBLIC RELATIONS & CORPORATE COMMUNICATIONS</span>
+          </div>
+
+          <h1 class="hero-title" id="hero-display-title">
+            Elevating <span class="gradient-text">Brand Reputation</span> & Strategic Media Relations.
+          </h1>
+
+          <p class="hero-subtitle" id="hero-display-subtitle">
+            Public Relations & Corporate Communications Specialist with 3+ years of experience managing 500+ media campaigns, crisis communication, press conferences, and C-suite stakeholder engagement.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary btn-glow">
+              Explore Campaigns <i data-lucide="arrow-right"></i>
+            </a>
+            <a href="#bio" class="btn btn-secondary glass-btn">
+              View Biography & Experience <i data-lucide="user"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Stats Bar -->
+        <div class="hero-stats-bar">
+          <div class="stat-card">
+            <span class="stat-num" id="stat-years">3+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-card">
+            <span class="stat-num" id="stat-campaigns">500+</span>
+            <span class="stat-label">Media Campaigns</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-card">
+            <span class="stat-num" id="stat-events">400+</span>
+            <span class="stat-label">Events & Press Conferences</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-card">
+            <span class="stat-num" id="stat-visibility">35%</span>
+            <span class="stat-label">Avg Visibility Lift</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Key Highlights -->
+      <div class="section-container">
+        <div class="section-header center-text">
+          <span class="section-tag">KEY HIGHLIGHTS</span>
+          <h2 class="section-title">Strategic Communications <span class="gradient-text">Excellence</span></h2>
+        </div>
+
+        <div class="highlights-grid">
+          <!-- Featured Bio Card -->
+          <div class="apple-card bio-highlight-card">
+            <div class="card-image-wrap">
+              <img src="assets/jit_paul_avatar.jpg" alt="Jit Paul Portrait" id="home-bio-avatar">
+              <div class="card-badge">PR EXECUTIVE</div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title" id="home-bio-name">Jit Paul</h3>
+              <p class="card-text" id="home-bio-tagline">Managing 50+ corporate accounts, executing high-impact press releases, crisis response, and executive communication strategies across print, digital, and broadcast platforms.</p>
+              <a href="#bio" class="card-link">Full Story & Qualifications <i data-lucide="chevron-right"></i></a>
+            </div>
+          </div>
+
+          <!-- Featured News Card -->
+          <div class="apple-card news-highlight-card" id="home-featured-news">
+            <div class="card-tag"><i data-lucide="zap"></i> RECENT MILESTONE</div>
+            <h3 class="card-title" id="home-news-title">500+ Corporate Media Campaigns Executed</h3>
+            <p class="card-text" id="home-news-snippet">Achieved 35% average increase in brand media visibility for Mediashine PR & Advertising corporate clients.</p>
+            <div class="card-footer">
+              <span class="news-date" id="home-news-date">Jan 2026</span>
+              <a href="#news" class="card-link">Read Press Coverage <i data-lucide="chevron-right"></i></a>
+            </div>
+          </div>
+
+          <!-- Featured Showcase Project Card -->
+          <div class="apple-card project-highlight-card" id="home-featured-project">
+            <div class="card-tag"><i data-lucide="star"></i> FEATURED CAMPAIGN</div>
+            <h3 class="card-title" id="home-project-title">Corporate Crisis & Media Strategy Blueprint</h3>
+            <p class="card-text" id="home-project-desc">Integrated media monitoring, reactive PR management, and executive speechwriting for C-suite leadership.</p>
+            <div class="tech-tags-row" id="home-project-tags">
+              <span class="tech-tag">Crisis PR</span>
+              <span class="tech-tag">Media Analytics</span>
+              <span class="tech-tag">C-Suite MIS</span>
+            </div>
+            <a href="#projects" class="card-link">View All Campaigns <i data-lucide="chevron-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. BIOGRAPHY VIEW -->
+    <section id="bio-view" class="page-view">
+      <div class="section-container">
+        <div class="bio-hero-grid">
+          <div class="bio-image-column">
+            <div class="bio-portrait-frame">
+              <img src="assets/jit_paul_avatar.jpg" alt="Jit Paul Profile Picture" id="bio-portrait-img">
+              <div class="portrait-glow"></div>
+              <div class="portrait-status-badge">
+                <span class="status-indicator"></span>
+                <span id="bio-status-text">Available for PR & Communications Roles</span>
+              </div>
+            </div>
+
+            <div class="bio-quick-links">
+              <a href="#" id="bio-cv-download-btn" class="btn btn-secondary btn-full glass-btn" onclick="alert('Resume PDF is attached to Jit Paul Profile.'); return false;">
+                <i data-lucide="download"></i> Download Resume (PDF)
+              </a>
+              <div class="social-links-row" id="bio-social-links">
+                <a href="https://linkedin.com/in/jitpaul" target="_blank" class="social-icon-btn" title="LinkedIn"><i data-lucide="linkedin"></i></a>
+                <a href="https://github.com/jitpaul" target="_blank" class="social-icon-btn" title="GitHub"><i data-lucide="github"></i></a>
+                <a href="mailto:jitpaul2022@gmail.com" class="social-icon-btn" title="Email"><i data-lucide="mail"></i></a>
+                <a href="tel:+919123305417" class="social-icon-btn" title="Phone"><i data-lucide="phone"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="bio-text-column">
+            <span class="section-tag">BIOGRAPHY & SUMMARY</span>
+            <h1 class="bio-name-heading" id="bio-name-heading">Jit Paul</h1>
+            <p class="bio-headline" id="bio-headline">Public Relations & Corporate Communications Professional</p>
+
+            <div class="bio-long-description" id="bio-long-text">
+              <p>Strategic and results-driven Public Relations & Corporate Communications Professional with nearly 3 years of hands-on experience managing 60+ media campaigns, executive coordination, and stakeholder engagement.</p>
+              <p>Proven track record in press release writing, media monitoring, crisis communication, brand reputation management, and cross-functional collaboration. Adept at building client relationships, executing large-scale corporate events, and delivering data-backed MIS reports for senior leadership in fast-paced environments.</p>
+            </div>
+
+            <!-- Career Timeline -->
+            <div class="timeline-wrapper">
+              <h3 class="timeline-title"><i data-lucide="briefcase"></i> Professional Experience</h3>
+              <div class="timeline" id="bio-timeline">
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-content">
+                    <span class="timeline-date">DEC 2022 – JAN 2026</span>
+                    <h4>Public Relations Executive @ Mediashine PR & Advertising, Kolkata</h4>
+                    <p>Managed 500+ corporate media campaigns, 400+ press conferences & events, client portfolio of 50+ corporate accounts, C-suite MIS competitive media reports, and media monitoring.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Education & Credentials -->
+            <div class="timeline-wrapper" style="margin-top: 24px;">
+              <h3 class="timeline-title"><i data-lucide="graduation-cap"></i> Education & Certifications</h3>
+              <div class="timeline">
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-content">
+                    <span class="timeline-date">2022 – 2025</span>
+                    <h4>Bachelor of Public Relations & Event Management</h4>
+                    <p>West Bengal State University, Kolkata | CGPA: 9.77 / 10</p>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-content">
+                    <span class="timeline-date">2020 – 2022</span>
+                    <h4>Higher Secondary – Science (ETCE)</h4>
+                    <p>West Bengal Council of Higher Secondary Education | Score: 83%</p>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-content">
+                    <span class="timeline-date">CERTIFICATIONS</span>
+                    <h4>Client Service Delivery (Forage) | Employee Engagement (Keka Academy) | Management Consulting (PWC)</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. PRESS & NEWS VIEW -->
+    <section id="news-view" class="page-view">
+      <div class="section-container">
+        <div class="section-header center-text">
+          <span class="section-tag">PRESS RELEASES & NEWS</span>
+          <h1 class="section-title">Media Releases & <span class="gradient-text">PR Coverage</span></h1>
+          <p class="section-subtitle">Press releases, brand messaging, media announcements, and corporate communication updates.</p>
+        </div>
+
+        <!-- News Category Filter & Search -->
+        <div class="filter-search-bar">
+          <div class="category-tabs" id="news-category-tabs">
+            <button class="cat-tab active" data-cat="all">All Releases</button>
+            <button class="cat-tab" data-cat="Press Release">Press Release</button>
+            <button class="cat-tab" data-cat="Corporate PR">Corporate PR</button>
+            <button class="cat-tab" data-cat="Events">Event Coverage</button>
+          </div>
+          <div class="search-input-box">
+            <i data-lucide="search"></i>
+            <input type="text" id="news-search-input" placeholder="Search press releases...">
+          </div>
+        </div>
+
+        <!-- News Cards Grid -->
+        <div class="news-grid" id="news-grid-container">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. CAMPAIGNS SHOWCASE VIEW -->
+    <section id="projects-view" class="page-view">
+      <div class="section-container">
+        <div class="section-header center-text">
+          <span class="section-tag">PORTFOLIO CAMPAIGNS</span>
+          <h1 class="section-title">Media Campaigns & <span class="gradient-text">Event Management</span></h1>
+          <p class="section-subtitle">A showcase of PR campaigns, corporate press conferences, brand reputation strategies, and executive communications.</p>
+        </div>
+
+        <div class="category-tabs center-tabs" id="projects-category-tabs">
+          <button class="cat-tab active" data-proj-cat="all">All Campaigns</button>
+          <button class="cat-tab" data-proj-cat="Media Relations">Media Relations</button>
+          <button class="cat-tab" data-proj-cat="Event Management">Event Management</button>
+          <button class="cat-tab" data-proj-cat="Crisis Communication">Crisis & MIS</button>
+        </div>
+
+        <div class="projects-grid" id="projects-grid-container">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. CORE SKILLS VIEW -->
+    <section id="skills-view" class="page-view">
+      <div class="section-container">
+        <div class="section-header center-text">
+          <span class="section-tag">CORE COMPETENCIES</span>
+          <h1 class="section-title">Professional Skills & <span class="gradient-text">Tool Proficiency</span></h1>
+          <p class="section-subtitle">PR tools, media monitoring, corporate communication, design tools, and technical capabilities.</p>
+        </div>
+
+        <div class="skills-sections-grid" id="skills-container">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. CONTACT VIEW -->
+    <section id="contact-view" class="page-view">
+      <div class="section-container">
+        <div class="contact-grid">
+          <div class="contact-info-card">
+            <span class="section-tag">GET IN TOUCH</span>
+            <h1 class="contact-title">Let’s connect for <span class="gradient-text">PR & Media Growth</span>.</h1>
+            <p class="contact-desc">Looking for strategic corporate communications, media campaign execution, or press conference coordination? Reach out directly.</p>
+
+            <div class="contact-details-list">
+              <div class="contact-detail-item">
+                <div class="detail-icon"><i data-lucide="mail"></i></div>
+                <div>
+                  <span class="detail-label">Email Address</span>
+                  <span class="detail-val" id="contact-email-val">jitpaul2022@gmail.com</span>
+                </div>
+              </div>
+              <div class="contact-detail-item">
+                <div class="detail-icon"><i data-lucide="phone"></i></div>
+                <div>
+                  <span class="detail-label">Phone Contact</span>
+                  <span class="detail-val">+91 9123305417</span>
+                </div>
+              </div>
+              <div class="contact-detail-item">
+                <div class="detail-icon"><i data-lucide="map-pin"></i></div>
+                <div>
+                  <span class="detail-label">Location</span>
+                  <span class="detail-val" id="contact-location-val">Sodepur, Kolkata - 700110, West Bengal</span>
+                </div>
+              </div>
+              <div class="contact-detail-item">
+                <div class="detail-icon"><i data-lucide="languages"></i></div>
+                <div>
+                  <span class="detail-label">Languages</span>
+                  <span class="detail-val">English (Professional), Hindi (Fluent), Bengali (Native)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-card">
+            <form id="contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="form-name">Your Name</label>
+                  <input type="text" id="form-name" placeholder="Client / Company Name" required>
+                </div>
+                <div class="form-group">
+                  <label for="form-email">Your Email</label>
+                  <input type="email" id="form-email" placeholder="name@company.com" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="form-subject">Subject</label>
+                <input type="text" id="form-subject" placeholder="PR Campaign / Event Coordination Request" required>
+              </div>
+              <div class="form-group">
+                <label for="form-message">Message</label>
+                <textarea id="form-message" rows="5" placeholder="Share your campaign objectives, timeline, or inquiry..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full btn-glow">
+                <i data-lucide="send"></i> Send Message to Jit Paul
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. SECURE ADMIN PORTAL (AUTHENTICATED) -->
+    <section id="admin-view" class="page-view">
+      <div class="section-container admin-container">
+        
+        <!-- SECURE LOGIN GATEWAY (UNAUTHENTICATED) -->
+        <div id="admin-login-card" class="admin-login-card">
+          <div class="login-header">
+            <div class="login-icon"><i data-lucide="lock"></i></div>
+            <span class="admin-badge"><i data-lucide="shield"></i> SECURED ADMIN PORTAL</span>
+            <h2>Administrator Authentication</h2>
+            <p>Enter your secret admin credentials to manage Jit Paul’s website elements and content.</p>
+          </div>
+
+          <form id="admin-login-form">
+            <div class="form-group">
+              <label for="admin-user-input"><i data-lucide="user"></i> Username</label>
+              <input type="text" id="admin-user-input" placeholder="Enter admin username" required>
+            </div>
+            <div class="form-group">
+              <label for="admin-pass-input"><i data-lucide="key"></i> Password</label>
+              <input type="password" id="admin-pass-input" placeholder="Enter admin password" required>
+            </div>
+            <div class="login-hint">
+              <span><i data-lucide="info"></i> Default Credentials: <strong>admin</strong> / <strong>admin123</strong></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full btn-glow">
+              <i data-lucide="log-in"></i> Authenticate & Unlock Dashboard
+            </button>
+          </form>
+        </div>
+
+        <!-- ADMIN DASHBOARD CONTENT (AUTHENTICATED) -->
+        <div id="admin-dashboard-content" class="admin-dashboard-content" style="display: none;">
+          <div class="admin-header">
+            <div class="admin-title-box">
+              <span class="admin-badge"><i data-lucide="shield-check"></i> AUTHENTICATED ADMIN CMS</span>
+              <h1 class="admin-title">Backend Website <span class="gradient-text">Customizer & Control Panel</span></h1>
+              <p class="admin-subtitle">Welcome back, Jit Paul! Modify frontend titles, colors, resume bio, news releases, campaigns, and inbox messages.</p>
+            </div>
+            <div class="admin-quick-actions">
+              <button class="btn btn-danger glass-btn" id="admin-logout-btn">
+                <i data-lucide="log-out"></i> Lock & Log Out
+              </button>
+              <button class="btn btn-secondary glass-btn" id="admin-reset-btn">
+                <i data-lucide="rotate-ccw"></i> Restore Demo Data
+              </button>
+            </div>
+          </div>
+
+          <!-- Admin Nav Tabs -->
+          <div class="admin-nav-tabs">
+            <button class="admin-tab active" data-admin-tab="appearance">
+              <i data-lucide="palette"></i> Design & Theme Customizer
+            </button>
+            <button class="admin-tab" data-admin-tab="profile">
+              <i data-lucide="user-check"></i> Profile & Resume Info
+            </button>
+            <button class="admin-tab" data-admin-tab="news">
+              <i data-lucide="newspaper"></i> Press Releases
+            </button>
+            <button class="admin-tab" data-admin-tab="projects">
+              <i data-lucide="briefcase"></i> Campaigns CMS
+            </button>
+            <button class="admin-tab" data-admin-tab="inbox">
+              <i data-lucide="inbox"></i> Inbox Messages <span class="badge-count" id="admin-inbox-count">0</span>
+            </button>
+            <button class="admin-tab" data-admin-tab="security">
+              <i data-lucide="key-round"></i> Login Credentials
+            </button>
+          </div>
+
+          <!-- Admin Panel 1: Appearance -->
+          <div class="admin-panel active" id="admin-panel-appearance">
+            <div class="admin-panel-card">
+              <h3><i data-lucide="sliders"></i> Global Theme & Hero Customizer</h3>
+              <div class="form-grid">
+                <div class="form-group">
+                  <label>Primary Theme Accent Color</label>
+                  <div class="color-preset-grid">
+                    <button class="preset-btn p-violet" data-set-color="violet">Neon Violet</button>
+                    <button class="preset-btn p-cyan" data-set-color="cyan">Cyber Cyan</button>
+                    <button class="preset-btn p-emerald" data-set-color="emerald">Emerald</button>
+                    <button class="preset-btn p-amber" data-set-color="amber">Amber Gold</button>
+                    <button class="preset-btn p-rose" data-set-color="rose">Sunset Rose</button>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="admin-hero-title">Hero Main Title (HTML Supported)</label>
+                  <input type="text" id="admin-hero-title">
+                </div>
+
+                <div class="form-group">
+                  <label for="admin-hero-subtitle">Hero Subtitle</label>
+                  <textarea id="admin-hero-subtitle" rows="3"></textarea>
+                </div>
+
+                <div class="form-group">
+                  <label for="admin-pill-text">Hero Pill Badge Text</label>
+                  <input type="text" id="admin-pill-text">
+                </div>
+
+                <div class="form-group">
+                  <label for="admin-brand-name">Header Navigation Brand Name</label>
+                  <input type="text" id="admin-brand-name">
+                </div>
+              </div>
+
+              <div class="admin-save-bar">
+                <button class="btn btn-primary btn-glow" id="save-appearance-btn">
+                  <i data-lucide="save"></i> Save & Apply Frontend Changes
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Admin Panel 2: Profile & Bio -->
+          <div class="admin-panel" id="admin-panel-profile">
+            <div class="admin-panel-card">
+              <h3><i data-lucide="user-cog"></i> Profile & Resume Information</h3>
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="admin-full-name">Full Name</label>
+                  <input type="text" id="admin-full-name">
+                </div>
+                <div class="form-group">
+                  <label for="admin-job-headline">Professional Headline</label>
+                  <input type="text" id="admin-job-headline">
+                </div>
+                <div class="form-group">
+                  <label for="admin-status-text">Availability Status Badge</label>
+                  <input type="text" id="admin-status-text">
+                </div>
+                <div class="form-group">
+                  <label for="admin-avatar-url">Profile Photo Path / Image URL</label>
+                  <input type="text" id="admin-avatar-url">
+                </div>
+                <div class="form-group">
+                  <label for="admin-email">Email Address</label>
+                  <input type="text" id="admin-email">
+                </div>
+                <div class="form-group">
+                  <label for="admin-location">Location</label>
+                  <input type="text" id="admin-location">
+                </div>
+                <div class="form-group span-2">
+                  <label for="admin-bio-summary">Home Teaser Bio Summary</label>
+                  <textarea id="admin-bio-summary" rows="3"></textarea>
+                </div>
+                <div class="form-group span-2">
+                  <label for="admin-bio-long">Full Professional Summary</label>
+                  <textarea id="admin-bio-long" rows="6"></textarea>
+                </div>
+              </div>
+
+              <div class="admin-save-bar">
+                <button class="btn btn-primary btn-glow" id="save-profile-btn">
+                  <i data-lucide="save"></i> Update Profile Information
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Admin Panel 3: News -->
+          <div class="admin-panel" id="admin-panel-news">
+            <div class="admin-panel-card">
+              <div class="panel-header-flex">
+                <h3><i data-lucide="newspaper"></i> Press Releases & News CMS</h3>
+                <button class="btn btn-primary" id="admin-add-news-btn">
+                  <i data-lucide="plus"></i> Add New Press Release
+                </button>
+              </div>
+
+              <div class="admin-table-wrapper">
+                <table class="admin-table">
+                  <thead>
+                    <tr>
+                      <th>Title</th>
+                      <th>Category</th>
+                      <th>Date</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody id="admin-news-table-body"></tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- Admin Panel 4: Projects -->
+          <div class="admin-panel" id="admin-panel-projects">
+            <div class="admin-panel-card">
+              <div class="panel-header-flex">
+                <h3><i data-lucide="briefcase"></i> Campaigns Showcase CMS</h3>
+                <button class="btn btn-primary" id="admin-add-project-btn">
+                  <i data-lucide="plus"></i> Add New Campaign
+                </button>
+              </div>
+
+              <div class="admin-table-wrapper">
+                <table class="admin-table">
+                  <thead>
+                    <tr>
+                      <th>Campaign Title</th>
+                      <th>Category</th>
+                      <th>Key Tags</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody id="admin-projects-table-body"></tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- Admin Panel 5: Inbox -->
+          <div class="admin-panel" id="admin-panel-inbox">
+            <div class="admin-panel-card">
+              <h3><i data-lucide="inbox"></i> Visitor Contact Submissions</h3>
+              <div id="admin-inbox-list" class="inbox-list"></div>
+            </div>
+          </div>
+
+          <!-- Admin Panel 6: Security Settings -->
+          <div class="admin-panel" id="admin-panel-security">
+            <div class="admin-panel-card">
+              <h3><i data-lucide="key-round"></i> Admin Login Password Customizer</h3>
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="admin-change-user">Admin Username</label>
+                  <input type="text" id="admin-change-user">
+                </div>
+                <div class="form-group">
+                  <label for="admin-change-pass">New Admin Password</label>
+                  <input type="password" id="admin-change-pass">
+                </div>
+              </div>
+              <div class="admin-save-bar">
+                <button class="btn btn-primary btn-glow" id="save-security-btn">
+                  <i data-lucide="shield-check"></i> Update Login Credentials
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="apple-footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="brand-logo-icon"><i data-lucide="sparkles"></i></span>
+          <span class="brand-name" id="footer-brand-name">JIT PAUL</span>
+        </div>
+        <p class="footer-tagline">Public Relations & Corporate Communications Professional. Sodepur, Kolkata.</p>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 <span id="footer-copyright-name">Jit Paul</span>. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#bio">Biography</a>
+          <a href="#news">Press</a>
+          <a href="#projects">Campaigns</a>
+          <a href="#admin" class="footer-admin-link" title="Secured Admin Portal"><i data-lucide="lock"></i> Admin Portal</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- NEWS READER MODAL -->
+  <div class="modal-backdrop" id="news-modal">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="news-modal-close"><i data-lucide="x"></i></button>
+      <div class="modal-header">
+        <span class="news-cat-pill" id="modal-news-cat">PRESS RELEASE</span>
+        <span class="news-modal-date" id="modal-news-date">Jan 2026</span>
+      </div>
+      <h2 class="modal-title" id="modal-news-title">Press Release Title</h2>
+      <div class="modal-body-content" id="modal-news-body"></div>
+    </div>
+  </div>
+
+  <!-- PROJECT DETAIL MODAL -->
+  <div class="modal-backdrop" id="project-modal">
+    <div class="modal-card modal-card-lg">
+      <button class="modal-close-btn" id="project-modal-close"><i data-lucide="x"></i></button>
+      <div class="modal-project-hero">
+        <img src="" alt="Campaign Preview" id="modal-proj-img">
+      </div>
+      <div class="modal-body-content">
+        <span class="news-cat-pill" id="modal-proj-cat">CAMPAIGN</span>
+        <h2 class="modal-title" id="modal-proj-title">Campaign Title</h2>
+        <p class="modal-desc" id="modal-proj-desc">Detailed campaign summary.</p>
+        <div class="modal-proj-tags" id="modal-proj-tags"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST CONTAINER -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- JS SCRIPT -->
+  <script src="app.js"></script>
+</body>
+</html>
